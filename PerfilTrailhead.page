@@ -1,0 +1,93 @@
+<apex:page showHeader="false" standardStylesheets="false" sidebar="false" docType="html-5.0" applyBodyTag="False" applyHtmlTag="False">
+    
+    <html  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        
+        
+        <style>
+            
+            .mydiv{
+            margin: auto;
+            
+            }
+            .mydiv img{
+            height: inherit;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+            }
+            .boas-vindas{
+            	font-size: 2.3vh;
+            }
+            
+            .center {
+                margin: auto;
+                width: 50%;
+                padding: 10px;
+			}
+            
+        </style>
+        
+        <head>
+            <title>Daniel Freitas - Trailhead</title>
+            <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+            <meta name="keywords" content="Salesforce, Trailhead, Daniel Freitas"/>
+            <meta name="author" content="Daniel Freitas"/>
+            <meta name="description" content="O Trailhead é a maneira divertida de aprender!"/>
+            <meta http-equiv="refresh" content="3;URL='https://trailblazer.me/id/danielfreitasce'" />
+            <apex:slds /> 
+        </head>
+        
+        <body class="slds-scope slds-theme_shade">
+            <div class="slds-grid slds-grid_vertical slds-m-around_large">
+                <div class="slds-col mydiv slds-m-top_large">
+                    
+                    <div class="slds-card">
+                        <div class="slds-card__header slds-grid">
+                            <header class="slds-media slds-media_center slds-has-flexi-truncate">
+                                <div class="slds-media__figure">
+                                    
+                                    <span class="slds-icon_container slds-icon-custom-custom9" title="Description of icon when needed">  
+                                        <svg aria-hidden="true" class="slds-icon">  
+                                            <use xlink:href="{!URLFOR($Asset.SLDS, '/assets/icons/custom-sprite/svg/symbols.svg#custom9')}"></use>
+                                        </svg>  
+                                        <span class="slds-assistive-text">Icon Assistive Text</span> 
+                                    </span>
+                                    
+                                </div>
+                                <div class="slds-media__body">
+                                    <h2 class="slds-card__header-title">
+                                        <a href="#" class="slds-card__header-link slds-truncate" title="Meu perfil no Trailhead">
+                                            <span>Meu perfil no Trailhead</span>
+                                        </a>
+                                    </h2>
+                                </div>
+                            </header>
+                        </div>
+                        <div class="slds-card__body slds-card__body_inner">
+                            <div class ="slds-m-around_medium">
+                                <apex:image url="{!$Resource.PortifolioImage1}" style="border-radius: 10px;" width="500" height="392"/>
+                                <p class = "boas-vindas slds-text-align_center slds-border_bottom slds-p-top_large">
+                                    Oi! O Astro vai te levar ao meu perfil no Trailhead &#128516;
+                                </p>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="slds-col slds-m-top_large" style="height:6rem;position:relative">
+                    <div class="slds-spinner slds-spinner_medium">
+                        <span class="slds-assistive-text">Loading</span>
+                        <div class="slds-spinner__dot-a"></div>
+                        <div class="slds-spinner__dot-b"></div>
+                    </div>
+                </div>
+                
+            </div>
+            <footer>
+                <div class="center" >
+                    <p class="slds-border_bottom slds-text-align_center ">Daniel Freitas</p>
+                </div>
+            </footer>
+        </body>
+    </html>   
+</apex:page>
